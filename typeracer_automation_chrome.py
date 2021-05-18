@@ -13,7 +13,7 @@ class TyperaceBot:
         time.sleep(2)
 
         # Clicking on the "Enter a typing race"
-        enter_race = self.driver.find_element_by_xpath("/html/body/div[1]/div/div[1]/div/div[1]/div[2]/table/tbody/tr[2]/td[2]/div/div[1]/div/div[1]/div/a")
+        enter_race = self.driver.find_element_by_xpath("//a[@class='gwt-Anchor prompt-button bkgnd-green']")
         enter_race.click()
 
         # Wait till the countdown is zero and start typing the text in the answer box
